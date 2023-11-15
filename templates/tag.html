@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html'%}
+{% load static%}
+{% block autho %}
+{% include 'include_components/for_navBar_authorization.html'%}
+{% endblock %}
+{% block content %}
+<h1>Tag: <text style="font-size: 30px;">{{ tag.text }}</text></h1>
+
+{% for question in questions%}
+{% include 'include_components/temp_que.html'%}
+{% endfor %}
+
+
+
+
+
+
+
+{% endblock %}
+{% block pagination %}
+{% include 'include_components/pagin.html'%}
+{% endblock %}

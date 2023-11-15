@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html'%}
+{% load static%}
+{% block autho %}
+{% include 'include_components/for_navBar_authorization.html'%}
+{% endblock %}
+{% block content %}
+<a href="{% url 'ask'%}" style="color: black; font-size: 40px;  text-decoration: none">New Question <a href="{% url 'hot'%}" style="font-size: 20px;">Hot Question</a></a>
+{% for question in questions%}
+
+{% include 'include_components/temp_que.html'%}
+
+{% endfor %}
+{% endblock %}
+{% block pagination %}
+{% include 'include_components/pagin.html'%}
+{% endblock %}

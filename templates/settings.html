@@ -1,0 +1,83 @@
+{% extends 'layouts/base.html'%}
+{% load static%}
+{% block autho %}
+{% include 'include_components/for_navBar_authorization.html'%}
+{% endblock %}
+{% block content %}
+<h1>Sattings: <text style="font-size: 35px;">Dr. Pepper</text></h1>
+
+<div class="col-8">
+    <div class="mb-3" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-4">
+                <label class="form-label" >Login</label>
+            </div>
+            <div class="col-8">
+                <input type="text" class="form-control" id="Login">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-4">
+                <label class="form-label">Email</label>
+            </div>
+            <div class="col-8">
+                <input type="email" class="form-control" id="Email">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-4">
+                <label class="form-label">NickName</label>
+            </div>
+            <div class="col-8">
+                <input type="text" class="form-control" id="NickName">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-4">
+                <label class="form-label">Upload avatar</label>
+            </div>
+            <div class="col-8">
+                <img src="{%static '/img/avatar.png'%}" alt="" class="imageAvatarAnswer" style="margin-bottom: 20px;">
+                <div class="row">
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="UploadAvatar">
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-outline-dark" type="submit">choose</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-8">
+            <button class="btn btn-outline-dark" type="submit">Save</button>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

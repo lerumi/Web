@@ -1,0 +1,77 @@
+main > .container{
+    padding:  60px 15px 0px;
+}
+.center{
+    text-align: center;
+}
+.question{
+    border: 1px solid gray;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.imageAvatar
+{
+    max-width: 50px;
+    max-height: 50px;
+}
+.question-title
+{
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.question-text
+{
+    font-size: 16px;
+    font-family: Helvetica;
+}
+.wrapper
+{
+    display: flex;
+}
+.MyAvatar
+{
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 85%;
+}
+.like-container {
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+  }
+   
+.like-button {
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 8px;
+  }
+   
+.like-count {
+    font-size: 18px;
+  }
+.foter { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+.imageAvatarAnswer
+{
+    max-width: 100px;
+    max-height: 100px;
+}
+.like-containerAnswer {
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+  }
+.AnswerContainer
+{
+    padding-top: 20px;
+}

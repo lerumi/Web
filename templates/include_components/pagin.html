@@ -1,0 +1,18 @@
+
+<div class="d-grid gap-2 d-md-block container" style="margin-bottom: 50px;">
+    {% if questions.paginator.num_pages > 1%}
+    <ul class="pagination">
+        <a class="btn btn-outline-dark" href="?page={{ 1 }}" style="font-size: 20px; text-decoration: none; color: black; margin-right: 5px">first</a>
+        {% for p in questions.paginator.page_range %}
+            {% if questions.number == p %}
+        <li class="page-num page-num-selected btn bg-secondary" style="font-size: 20px; margin-right: 5px">{{ p }}</li>
+            {% elif p >= questions.number|add:-3 and p <= questions.number|add:3  %}
+        <li class="page-num">
+        <a class="btn btn-outline-dark" href="?page={{ p }}" style="font-size: 20px; text-decoration: none; color: black; margin-right: 5px">{{ p }}</a>
+        </li>
+            {% endif %}
+        {% endfor %}
+        <a class="btn btn-outline-dark" href="?page={{ questions.paginator.num_pages }}" style="font-size: 20px; text-decoration: none; color: black;">last</a>
+    </ul>
+    {% endif %}
+</div>

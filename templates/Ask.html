@@ -1,0 +1,45 @@
+{% extends 'layouts/base.html'%}
+{% load static%}
+{% block autho %}
+{% include 'include_components/for_navBar_not_autho.html'%}
+{% endblock %}
+{% block content %}
+<h1>New Question</h1>
+
+<div class="mb-3">
+    <div class="row">
+        <div class="col-1">
+            <label class="form-label">Title</label>
+        </div>
+        <div class="col-11">
+            <input type="text" class="form-control" id="Title">
+        </div>
+    </div>
+</div>
+<div class="mb-3">
+    <div class="row">
+        <div class="col-1">
+            <label class="form-label">Text</label>
+        </div>
+        <div class="col-11">
+            <textarea class="form-control" id="Text" rows="15"></textarea>
+        </div>
+    </div>
+</div>
+<div class="mb-3">
+    <div class="row">
+        <div class="col-1">
+            <label class="form-label">Tags</label>
+        </div>
+        <div class="col-11">
+            <input type="text" class="form-control" id="Tags">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-11">
+        <button class="btn btn-outline-dark" type="submit">Ask!</button>
+    </div>
+</div>
+{% endblock %}
